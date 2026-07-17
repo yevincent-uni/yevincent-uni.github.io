@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Rivera — Software Engineer</title>
+  <meta name="description" content="Portfolio of Alex Rivera, Software Engineer. Projects, skills, and contact information.">
+
+  <!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (technical labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="logo" aria-label="Home">
+        <span class="logo-mark">AR</span>
+        <span class="logo-tag">rev.02</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-ghost" href="assets/resume.pdf" download>Resume</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/resume.pdf" download>Download Resume</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="blueprint-grid" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-frame" aria-hidden="true">
+          <span class="corner tl"></span>
+          <span class="corner tr"></span>
+          <span class="corner bl"></span>
+          <span class="corner br"></span>
+        </div>
+
+        <p class="eyebrow mono">// role: software engineer</p>
+        <h1 class="hero-title">
+          I build systems<br>that hold up<br><span class="accent">under load.</span>
+        </h1>
+        <p class="hero-sub">
+          Alex Rivera — backend &amp; infrastructure engineer focused on distributed
+          systems, developer tooling, and making things fast, correct, and boring
+          in the best way.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+
+        <dl class="hero-specs mono">
+          <div><dt>Location</dt><dd>Remote / EU</dd></div>
+          <div><dt>Experience</dt><dd>6 yrs</dd></div>
+          <div><dt>Status</dt><dd class="status-live"><span class="dot"></span>Open to work</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="section-inner about-grid">
+        <div class="section-head">
+          <p class="eyebrow mono">// about</p>
+          <h2>Background</h2>
+        </div>
+
+        <div class="about-body">
+          <p>
+            I'm a software engineer who likes taking messy, ambiguous problems and
+            turning them into systems other engineers actually enjoy working on.
+            Over the last six years I've worked across backend services, data
+            pipelines, and internal developer tooling — mostly in Python, Go, and
+            TypeScript.
+          </p>
+          <p>
+            I care most about the boring parts of engineering that make everything
+            else possible: clear interfaces, good observability, and infrastructure
+            that fails safely. Outside of work I contribute to a couple of open
+            source tools and write occasionally about distributed systems.
+          </p>
+
+          <ul class="about-stats">
+            <li><strong>40+</strong><span>Projects shipped</span></li>
+            <li><strong>6</strong><span>Years in industry</span></li>
+            <li><strong>12</strong><span>OSS contributions</span></li>
+          </ul>
+        </div>
+
+        <div class="about-photo">
+          <div class="photo-frame">
+            <img src="assets/profile.jpg" alt="Portrait of Alex Rivera" onerror="this.style.display='none'; this.parentElement.classList.add('photo-empty')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-head">
+          <p class="eyebrow mono">// skills</p>
+          <h2>Toolkit</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 class="mono">languages</h3>
+            <ul class="chip-list">
+              <li>Python</li><li>Go</li><li>TypeScript</li><li>SQL</li><li>Rust</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="mono">backend &amp; infra</h3>
+            <ul class="chip-list">
+              <li>PostgreSQL</li><li>Kafka</li><li>Redis</li><li>gRPC</li><li>Kubernetes</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="mono">cloud &amp; devops</h3>
+            <ul class="chip-list">
+              <li>AWS</li><li>Terraform</li><li>Docker</li><li>GitHub Actions</li><li>Datadog</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="mono">practices</h3>
+            <ul class="chip-list">
+              <li>System design</li><li>Testing</li><li>Code review</li><li>Mentoring</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="section-inner">
+        <div class="section-head">
+          <p class="eyebrow mono">// projects</p>
+          <h2>Selected work</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="mono project-index">spec.01</span>
+              <h3>Queue — durable task runner</h3>
+            </div>
+            <p>
+              An open source job queue built on Postgres, handling millions of
+              scheduled tasks a day with at-least-once delivery and automatic
+              retries.
+            </p>
+            <ul class="chip-list small">
+              <li>Go</li><li>PostgreSQL</li><li>Docker</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Code →</a>
+              <a href="#" class="link-arrow">Live demo →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="mono project-index">spec.02</span>
+              <h3>Ledger — event-sourced accounting API</h3>
+            </div>
+            <p>
+              A double-entry ledger service used to reconcile payments across
+              three currencies, built with strict event sourcing and replayable
+              state.
+            </p>
+            <ul class="chip-list small">
+              <li>TypeScript</li><li>Kafka</li><li>Redis</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Code →</a>
+              <a href="#" class="link-arrow">Write-up →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="mono project-index">spec.03</span>
+              <h3>Fieldkit — CLI for infra scaffolding</h3>
+            </div>
+            <p>
+              A developer CLI that scaffolds Terraform modules and CI pipelines
+              from a single config file, cutting new-service setup from a day to
+              minutes.
+            </p>
+            <ul class="chip-list small">
+              <li>Python</li><li>Terraform</li><li>GitHub Actions</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Code →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="mono project-index">spec.04</span>
+              <h3>Signal — real-time metrics dashboard</h3>
+            </div>
+            <p>
+              A lightweight alternative to heavier observability suites, streaming
+              service metrics over WebSockets to a dashboard teams actually check.
+            </p>
+            <ul class="chip-list small">
+              <li>Rust</li><li>WebSockets</li><li>SQLite</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Code →</a>
+              <a href="#" class="link-arrow">Live demo →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section-alt">
+      <div class="section-inner contact-grid">
+        <div class="section-head">
+          <p class="eyebrow mono">// contact</p>
+          <h2>Let's talk</h2>
+          <p class="contact-sub">
+            Have a role, project, or problem you think I'd be a good fit for?
+            Send a message — I read everything that comes through here.
+          </p>
+
+          <ul class="contact-list mono">
+            <li><span>Email</span><a href="mailto:hello@alexrivera.dev">hello@alexrivera.dev</a></li>
+            <li><span>GitHub</span><a href="https://github.com/" target="_blank" rel="noopener">github.com/alexrivera</a></li>
+            <li><span>LinkedIn</span><a href="https://linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/alexrivera</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="mono">© <span id="year"></span> Alex Rivera. Built with HTML, CSS &amp; a little JS.</p>
+      <div class="footer-links">
+        <a href="mailto:hello@alexrivera.dev">Email</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
